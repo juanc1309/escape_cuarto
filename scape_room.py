@@ -5,10 +5,7 @@ print("***** ESCAPE ROOM *****")
 nombre = input("\nIngresa tu nombre: ")
 accion = input("\nIngresa enter para continuar: ")
 
-if os.name == "nt":
-    os.system("cls")
-else:
-    os.system("clear")
+os.system("cls")
 
 llaves = 0
 pista1 = ""
@@ -25,16 +22,46 @@ while llaves != 5:
 
     opcion = int(input("\nIngrese su opción: "))
 
+    while (opcion < 1) or (opcion > 6):
+        opcion = int(input("Ingrese una opción váilda: "))
+
     match opcion:
         case 1:
+            os.system("cls")
+            print("--- Cuarto 1 ---")
+            print("\n- Acertijo 1 -")
+            print("")
 
         case 2:
+            os.system("cls")
+            print("--- Cuarto 2 ---")
+            print("\n- Acertijo 1 -")
+            print("")
 
         case 3:
+            os.system("cls")
+            print("--- Cuarto 3 ---")
+            print("\n- Acertijo 1 -")
+            print("")
 
         case 4:
-            if pista1 is "":
+            if pista1 is "Aunque comience por la noche, termino casi por la mañana. ¿Qué soy?":
+                os.system("cls")
+                print("--- Cuarto 4 ---")
+                print("\n- Acertijo 1 -")
+                print("")
+
+            else:
+                print("Aun no tienes la llave, intentalo cuando lo tengas")
                 
         case 5:
+            if pista1 is "Aunque comience por la noche, termino casi por la mañana. ¿Qué soy?":
+                os.system("cls")
+                print("--- Cuarto 4 ---")
+                print("\n- Acertijo 1 -")
+                print("")
 
-        case _:
+            else:
+                print("Aun no tienes la llave, intentalo cuando lo tengas")
+
+print("Felicidades acabaste de salir de la casa abandonada ")
