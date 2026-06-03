@@ -11,9 +11,10 @@ llaves = 0
 pista1 = ""
 pista2 = ""
 
+
+print("Ahora se encuentra en una casa abandonada con cuatro puertas, dos puede acceder sin ningún problema, pero las otras dos necesita sus respectivas contraseñas de las puertas, en las cuales podrá obtener mediante las pistas que puede encontrar en dos de las tres habitaciones iniciales.\n")
 while llaves != 5:
-    print("Ahora se encuentra en una casa abandonada con cinco puertas, tres puede acceder sin ningún problema, mas sin embargo las otras dos necesita sus respectivas contraseñas de las puertas, en las cuales podrá obtener mediante las pistas que puede encontrar en dos de las tres habitaciones iniciales.")
-    print("\n*** HABITACIONES ***")
+    print("*** HABITACIONES ***")
     print("\n1. Puerta 1")
     print("2. Puerta 2")
     print("3. Puerta 3 - PUERTA BLOQUEADA, NECESITA UNA PISTA PARA PODER ABRIRLA XD")
@@ -62,5 +63,6 @@ while llaves != 5:
                 print("")
             else:
                 print("Aun no tienes la llave, intentalo cuando lo tengas")
+    os.system("cls")
 
 print("Felicidades acabaste de salir de la casa abandonada ")
