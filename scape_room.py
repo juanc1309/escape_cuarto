@@ -29,8 +29,9 @@ while llaves != 5:
         case 1:
             os.system("cls")
             print("--- Cuarto 1 ---")
+
             print("\n- Acertijo 1 -")
-            print("")
+            ene agujas pero no cose. ¿Qué es?")
 
         case 2:
             os.system("cls")
@@ -39,10 +40,13 @@ while llaves != 5:
             print("")
 
         case 3:
-            os.system("cls")
-            print("--- Cuarto 3 ---")
-            print("\n- Acertijo 1 -")
-            print("")
+            if pista1 is "Aunque comience por la noche, termino casi por la mañana. ¿Qué soy?":
+                os.system("cls")
+                print("--- Cuarto 3 ---")
+                print("\n- Acertijo 1 -")
+                print("")
+            else:
+                print("Aun no tienes la llave, intentalo cuando lo tengas")
 
         case 4:
             if pista1 is "Aunque comience por la noche, termino casi por la mañana. ¿Qué soy?":
@@ -50,17 +54,6 @@ while llaves != 5:
                 print("--- Cuarto 4 ---")
                 print("\n- Acertijo 1 -")
                 print("")
-
-            else:
-                print("Aun no tienes la llave, intentalo cuando lo tengas")
-                
-        case 5:
-            if pista1 is "Aunque comience por la noche, termino casi por la mañana. ¿Qué soy?":
-                os.system("cls")
-                print("--- Cuarto 4 ---")
-                print("\n- Acertijo 1 -")
-                print("")
-
             else:
                 print("Aun no tienes la llave, intentalo cuando lo tengas")
 
