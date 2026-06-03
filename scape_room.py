@@ -28,33 +28,37 @@ while llaves != 5:
     match opcion:
         case 1:
             os.system("cls")
-            print("--- Cuarto 1 ---")
-            print("\n1. Acertijo 1")
-            print("2. Acertijo 2")
-            print("3. Acertijo 3")
+            while n_ac == 3:
+                print("--- Cuarto 1 ---")
+                print("\n1. Acertijo 1")
+                print("2. Acertijo 2")
+                print("3. Acertijo 3")
 
-            menu_ac = int(input("\nIngrese el acertijo a resolver: "))
-            while (menu_ac < 1) or (menu_ac > 3):
-                menu_ac = int(input("Ingrese una opción váilda: "))
-            match menu_ac:
-                case 1:
-                    os.system("cls")
-                    print("- Acertijo 1 -")
-                    ac1 = input("Tiene agujas pero no cose. ¿Qué es?: ")
+                menu_ac = int(input("\nIngrese el acertijo a resolver: "))
+                while (menu_ac < 1) or (menu_ac > 3):
+                    menu_ac = int(input("Ingrese una opción váilda: "))
 
-                    if (ac1.lower() == "reloj") or (ac1.lower() == "el reloj"):
-                        n_ac = n_ac + 1
-                        print("Correcto ahora faltan ", (3 - n_ac) ," acertijos más ")
-                        input("Presione enter para continuar: ")
+                match menu_ac:
+                    case 1:
+                        os.system("cls")
+                        print("- Acertijo 1 -")
+                        ac1 = input("Tiene agujas pero no cose. ¿Qué es?: ")
+                        if (ac1.lower() == "reloj") or (ac1.lower() == "el reloj"):
+                            n_ac = n_ac + 1
+                            print("Correcto ahora faltan ", (3 - n_ac) ," acertijos más ")
+                            input("Presione enter para continuar: ")
+                        else:
+                            print("Incorreto, sigue intentandolo o haz otro arcetijo: ") 
+                        
 
-                case 2:
-                    os.system("cls")
-                    print("- Acertijo 2 -")
-                    ac2 = input("Blanca por dentro, verde por fuera. Si quieres que te lo diga, espera.")
-                case 3:
-                    os.system("cls")
-                    print("- Acertijo 3 -")
-                    ac3 = input("Tengo ciudades pero no casas, montañas pero no árboles y agua pero no peces. ¿Qué soy?")
+                    case 2:
+                        os.system("cls")
+                        print("- Acertijo 2 -")
+                        ac2 = input("Blanca por dentro, verde por fuera. Si quieres que te lo diga, espera.")
+                    case 3:
+                        os.system("cls")
+                        print("- Acertijo 3 -")
+                        ac3 = input("Tengo ciudades pero no casas, montañas pero no árboles y agua pero no peces. ¿Qué soy?")
 
         case 2:
             os.system("cls")
