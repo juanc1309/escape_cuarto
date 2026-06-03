@@ -16,22 +16,28 @@ while llaves != 5:
     print("\n*** HABITACIONES ***")
     print("\n1. Puerta 1")
     print("2. Puerta 2")
-    print("3. Puerta 3")
+    print("3. Puerta 3 - PUERTA BLOQUEADA, NECESITA UNA PISTA PARA PODER ABRIRLA XD")
     print("4. Puerta 4 - PUERTA BLOQUEADA, NECESITA UNA PISTA PARA PODER ABRIRLA XD")
-    print("5. Puerta 5 - PUERTA BLOQUEADA, NECESITA UNA PISTA PARA PODER ABRIRLA XD")
 
     opcion = int(input("\nIngrese su opción: "))
 
-    while (opcion < 1) or (opcion > 6):
+    while (opcion < 1) and (opcion > 6):
         opcion = int(input("Ingrese una opción váilda: "))
 
     match opcion:
         case 1:
             os.system("cls")
             print("--- Cuarto 1 ---")
+            print("\n1. Acertijo 1")
+            print("2. Acertijo 2")
 
+            menu_ac = int(input("\nIngrese el acertijo a resolver: "))
+            while (menu_ac < 1) or (menu_ac > 2):
+                menu_ac = int(input("Ingrese una opción váilda: "))
+                
             print("\n- Acertijo 1 -")
-            ene agujas pero no cose. ¿Qué es?")
+            ac1 = input("Tiene agujas pero no cose. ¿Qué es?")
+            
 
         case 2:
             os.system("cls")
